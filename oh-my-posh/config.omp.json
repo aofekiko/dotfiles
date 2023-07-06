@@ -12,7 +12,7 @@
            "powerline_symbol": "",
            "foreground": "#00CED1",
            "background": "#29315A",
-           "template": "☸ {{if .Namespace}}{{.Namespace}}{{end}}"
+           "template": "󱃾 {{if .Namespace}}{{.Namespace}}{{end}}"
          }
       ],
       "type": "prompt"
@@ -62,7 +62,7 @@
             "fetch_version": false
           },
           "style": "diamond",
-          "template": "\ue626{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "template": "󰟓 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
           "trailing_diamond": "\ue0b4",
           "type": "go"
         },
@@ -166,6 +166,15 @@
           "type": "executiontime"
         },
         {
+          "background": "#5467c4",
+          "foreground": "#FFFFF",
+          "type": "session",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "style": "diamond",
+          "template": "{{ if .SSHSession }} {{ .UserName }}@{{ .HostName }}{{ end }}"
+        },
+        {
           "background": "#29315A",
           "foreground": "#3EC669",
           "leading_diamond": "\ue0b6",
@@ -190,6 +199,21 @@
         }
       ],
       "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "type": "rprompt",
+      "newline": false,
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#007ACC",
+          "properties": {
+            "time_format": "15:04:05"
+          }
+        }
+      ]
     }
   ],
   "final_space": true,
