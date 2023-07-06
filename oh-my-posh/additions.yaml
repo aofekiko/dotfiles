@@ -1,0 +1,4 @@
+# Append `addition` to each file in `path`
+files:
+  - path: '~/.bashrc'
+    addition: 'eval "$(oh-my-posh init bash --config .config/ofek.omp.json)"'
