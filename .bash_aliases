@@ -1,0 +1,12 @@
+alias chmox="chmod +x"
+alias k="kubectl"
+alias la="la -A"
+alias lla="ls -lA"
+alias lu="ls -hl | sort -h -k 5 -r"
+alias ports='netstat -tulanp'
+alias chownme="chown $(whoami):$(whoami)"
+alias ..="cd .."
+alias untarz="tar -xzvf $1"
+alias untar="tar -xvf $1"
+alias tar="tar -cvf $1"
+alias tarz="tar -cvzf $1"
