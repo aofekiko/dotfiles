@@ -1,6 +1,6 @@
 alias chmox="chmod +x"
 alias k="kubectl"
-alias la="la -A"
+alias la="ls -A"
 alias lla="ls -lA"
 alias lu="ls -hl | sort -h -k 5 -r"
 alias ports='netstat -tulanp'
